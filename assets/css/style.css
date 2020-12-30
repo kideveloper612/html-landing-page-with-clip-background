@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+:root {
+    --white-text: #ffffff;
+    --black-text: #000000;
+    --red-text: #ee4e52;
+    --blue-text: #61b4bc;
+    --gray-background: #ebebeb;
+    --red-background: #dd5a58;
+    --yellow-background: #f7cb53;
+    --green-background: #8dba8f;
+    --blue-background: #63a9b2;
+    --white-background: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+h1 {
+    width: 50%;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin: 1rem auto 0;
+    font-size: 1.3rem;
+}
+
+/* Common */
+.divider {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.text-red {
+    color: var(--red-text);
+}
+
+.text-blue {
+    color: var(--blue-text);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: sans-serif, "Segoe UI", "Open Sans", "Helvetica Neue";
+}
+
+.section-wrapper {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.section-wrapper:first-of-type,
+.section-wrapper:nth-of-type(2) {
+    min-height: 975px;
+}
+
+.section-wrapper:nth-last-child(2) {
+    margin: -250px auto 0;
+    min-height: 1300px;
+}
+
+.section-wrapper > .section-container {
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+/* Video */
+.goto-page {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.goto-page:hover {
+    text-decoration: underline;
+}
+
+.video-wrapper {
+    position: relative;
+}
+/* App Section */
+.app-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../images/comerciante-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(55% 0%, 100% 0%, 100% 100%, 45% 100%);
+}
+
+.app-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 600px;
+    background-color: var(--yellow-background);
+    clip-path: polygon(0 92%, 100% 60%, 100% 100%, 0% 100%);
+}
+
+.logo {
+    margin: 100px 0;
+    vertical-align: middle;
+}
+
+.app-text {
+    width: 45%;
+}
+
+/* Que Section */
+.section-wrapper:nth-of-type(2) {
+    background: var(--blue-background);
+}
+
+.que-top {
+    position: absolute;
+    top: -4%;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    background-color: var(--red-background);
+    clip-path: polygon(0 3%, 100% 0, 100% 9%, 0 30%);
+}
+
+.que-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--green-background);
+    clip-path: polygon(0 0, 100% 0, 100% 26%, 0 15%);
+}
+
+.que-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65%;
+    background-color: var(--white-text);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 95%, 100% 60%, 100% 100%, 0% 100%);
+}
+
+.que-image-wrapper {
+    position: relative;
+    top: 0;
+}
+.que-image {
+    position: absolute;
+    top: 50px;
+    background-image: url("../images/familia comprando de casa-1 (1).jpg");
+    width: 650px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+.section-wrapper:nth-of-type(2) article {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    width: 40%;
+    color: aliceblue;
+}
+
+.section-wrapper:nth-of-type(2) article p {
+    font-size: 1.5rem;
+}
+
+/* Slide Section */
+.slide-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    margin-top: 150px;
+}
+
+.slide {
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 70px;
+    height: 400px;
+}
+
+.slide img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.slide p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 2px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.slide article {
+    position: absolute;
+    top: 250px;
+    padding: 0 15px;
+    color: var(--white-text);
+    text-align: center;
+}
+
+.slide .slide-background {
+    content: " ";
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    left: 0;
+    bottom: 0;
+}
+
+.slide:nth-of-type(1) .slide-background {
+    background-color: var(--blue-background);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+.slide:nth-of-type(2) .slide-background {
+    background-color: var(--green-background);
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.slide:nth-of-type(3) .slide-background {
+    height: 60%;
+    background-color: var(--red-background);
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+}
+
+.slide:nth-of-type(4) .slide-background {
+    background-color: var(--yellow-background);
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
+}
+
+/* Slide Button Group */
+.slide-button-group {
+    text-align: center;
+}
+
+.prev-button,
+.next-button {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 50px 35px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--red-background);
+}
+
+.prev-button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    border: solid var(--white-text);
+    border-width: 0 6px 6px 0;
+    padding: 12px;
+    background-color: var(--red-background);
+    transform: translate(-25%, -50%) rotate(135deg);
+}
+
+.next-button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    border: solid var(--white-text);
+    border-width: 0 6px 6px 0;
+    padding: 12px;
+    background-color: var(--red-background);
+    transform: translate(-60%, -50%) rotate(-45deg);
+}
+
+.prev-button:hover,
+.next-button:hover {
+    transition: 0.3s;
+    opacity: 0.95;
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Nosso Section */
+
+.section-wrapper:nth-of-type(4) .section-container {
+    overflow: hidden;
+    margin: 4rem auto 8rem;
+}
+
+.section-wrapper:nth-of-type(4) article {
+    float: left;
+    width: 40%;
+}
+
+.section-wrapper:nth-of-type(4) img {
+    width: 50%;
+    float: right;
+    border-radius: 70px;
+}
+
+.section-wrapper:nth-of-type(4) p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nosso-bottom {
+    content: " ";
+    clear: both;
+    position: absolute;
+    left: 0;
+    bottom: -400px;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    background-color: var(--blue-background);
+    clip-path: polygon(0 80%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Form section */
+.form-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: calc(100% + 700px);
+    background-position: -700px 150px;
+    clip-path: polygon(0 15%, 100% 40%, 100% 100%, 0% 100%);
+    background-image: url("./../images/close-up-cart-stall-owner-holds-a-hand-held-fan-to-turn-on-the-stove-on-the-angkringan-cart.jpg");
+}
+
+.card {
+    width: 45%;
+    min-width: 700px;
+    border-radius: 70px;
+    background-color: var(--white-background);
+    position: absolute;
+    top: 400px;
+    padding: 6rem 3rem;
+    text-align: center;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+    height: calc(2em + 1rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-family: "Baloo 2", cursive;
+    font-weight: 400;
+    line-height: 2;
+    background-color: var(--gray-background);
+    background-clip: padding-box;
+    border: none;
+    border-radius: 1rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+textarea.form-control {
+    height: auto;
+    resize: vertical;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-family: "Baloo 2", cursive;
+    color: var(--white-text);
+    background-color: var(--red-background);
+    border: var(--red-background) solid transparent;
+    padding: 0.5rem 0.75rem;
+    font-size: 2rem;
+    line-height: 1.6;
+    width: 160px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.card .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 38, 0.5);
+}
+
+/* Map Section */
+.section-container .map-aside {
+    width: 40%;
+    float: left;
+    margin-top: 2rem;
+}
+
+#map {
+    height: 350px;
+    width: 60%;
+    float: right;
+    margin: 4rem auto;
+}
+
+.fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    text-align: center;
+    font-size: 1.8rem !important;
+    vertical-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: var(--red-background);
+    color: var(--white-text);
+    margin: 0.6rem;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--red-background);
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--white-text);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+
