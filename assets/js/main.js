@@ -16,6 +16,10 @@ $(document).ready(function () {
                 nav: true
             },
             1200: {
+                items: 3,
+                nav: true
+            },
+            1600: {
                 items: 4,
                 nav: true,
             }
