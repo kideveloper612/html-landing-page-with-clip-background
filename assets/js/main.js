@@ -3,6 +3,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         nav: true,
+        dots: false,
         responsiveClass: true,
         navText: ['<button class="prev-button"></button>','<button class="next-button"></button>'],
         responsive: {
@@ -10,18 +11,13 @@ $(document).ready(function () {
                 items: 1,
                 nav: true
             },
-            600: {
+            800: {
                 items: 2,
-                nav: false
-            },
-            900: {
-                items: 3,
                 nav: true
             },
             1200: {
                 items: 4,
                 nav: true,
-                loop: false
             }
         }
     });
