@@ -273,6 +273,26 @@ h3 {
     clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
 }
 
+.slide:nth-of-type(5) .slide-background {
+    background-color: var(--yellow-background);
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.slide:nth-of-type(6) .slide-background {
+    background-color: var(--yellow-background);
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.slide:nth-of-type(7) .slide-background {
+    background-color: var(--yellow-background);
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.slide:nth-of-type(8) .slide-background {
+    background-color: var(--yellow-background);
+    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
+}
+
 /* Slide Button Group */
 .slide-button-group {
     text-align: center;

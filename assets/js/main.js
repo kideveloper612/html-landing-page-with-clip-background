@@ -1,3 +1,32 @@
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsiveClass: true,
+        navText: ['<button class="prev-button"></button>','<button class="next-button"></button>'],
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            900: {
+                items: 3,
+                nav: true
+            },
+            1200: {
+                items: 4,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+});
+
 // Initialize and add the map
 function initMap() {
     // The location of Uluru
