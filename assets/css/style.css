@@ -503,6 +503,7 @@ footer {
     padding: 1rem;
     font-size: 2rem;
     margin-top: 1rem;
+    min-width: 350px;
     color: var(--white-text);
 }
 
