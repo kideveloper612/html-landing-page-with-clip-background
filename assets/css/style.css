@@ -89,6 +89,7 @@ h3 {
     position: absolute;
     left: 50%;
     top: 70%;
+    transform: translate(-50%, -50%);
     font-size: 2rem;
     font-weight: bold;
     color: var(--white-text);
