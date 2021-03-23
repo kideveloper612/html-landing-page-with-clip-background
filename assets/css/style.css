@@ -180,7 +180,7 @@ h3 {
 .que-image {
     position: absolute;
     top: 50px;
-    background-image: url("../images/familia comprando de casa-1 (1).jpg");
+    /* background-image: url("../images/familia comprando de casa-1 (1).jpg"); */
     width: 650px;
     height: 650px;
     background-repeat: no-repeat;
