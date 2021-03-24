@@ -134,12 +134,15 @@ h3 {
     vertical-align: middle;
 }
 
-.google-button {
-    display: block;
+.button-group a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
 }
 
-.google-button img {
-    width: 200px;
+.button-group img {
+    width: 100%;
 }
 
 .app-text {
@@ -562,6 +565,11 @@ footer p {
     .section-wrapper > .section-container {
         max-width: 900px;
     }
+
+    .section-wrapper:first-of-type {
+        min-height: 1016px;
+    }
+
     /* Que Section */
     .section-wrapper:nth-of-type(2) article {
         width: 80%;
@@ -645,7 +653,7 @@ footer p {
     }
 
     .section-wrapper:first-of-type {
-        min-height: 830px;
+        min-height: 850px;
     }
 
     .que-bottom {
@@ -695,7 +703,7 @@ footer p {
 
     /* App Section */
     .section-wrapper:first-of-type {
-        min-height: 590px;
+        min-height: 600px;
     }
 
     .logo {
@@ -799,7 +807,7 @@ footer p {
     }
 
     .section-wrapper:first-of-type {
-        min-height: 440px;
+        min-height: 540px;
     }
 
     .app-bottom {
@@ -946,7 +954,7 @@ footer p {
 
 @media screen and (max-width: 332px) {
     .section-wrapper:first-of-type {
-        min-height: 486px;
+        min-height: 590px;
     }
 
     .section-wrapper:nth-of-type(2) {
